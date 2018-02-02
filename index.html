@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Basic Form || Hi This is Form</title>
+    <!-- Meta tags Used -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" <meta name="description" content="Basic Form">
+    <meta name="keywords" content="HTML,CSS,Bootstrap,jQuery">
+    <meta name="author" content="tchaitanya.nyros">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- External css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- jQuery lib -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- JS -->
+    <script src="assets/js/script.js"></script>
+</head>
+
+<body style="background-color:#eee; overflow:auto;  ">
+    <!--  Form  -->
+    <form id="myform" action="" method="GET" style="position: absolute;">
+        <!-- Panel Heading -->
+        <div class="panel panel-primary">
+            <div class="panel-heading">Basic jQuery Form</div>
+            <div class="panel-body">
+                <table>
+                    <p id="head"></p>
+                    <!--  Form Elements -->
+                    <tr>
+                        <td>First Name: </td>
+                        <!--  TextBoxes -->
+                        <td>
+                            <input type="text" name="fullname" id="fname" placeholder="Enter First Name" class="form-control"size="48" style="margin-top: 5px;">
+
+                            <span id="fnm" class="error"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Last Name: </td>
+                        <td>
+                            <input type="text" name="lastname" id="lname" placeholder="Enter Last Name" class="form-control">
+
+                            <span id="lnm" class="error"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email: </td>
+                        <td>
+                            <input type="text" name="email" id="email" class="form-control" placeholder="form@email.com">
+
+                            <span id="enm" class="error"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Phone: </td>
+                        <td>
+                            <input type="text" name="Phone" id="pn" class="form-control" placeholder="1231-325-5687">
+
+                            <span id="pnm" class="error"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <!-- Radio Buttons -->
+                        <td>
+                            <input type="radio" name="gender_male" value="male" id="gn"> Male
+        
+                            <input type="radio" name="gender_male" value="female" id="no"> Female
+                            <br>
+                            <span id="gnm" class="error"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Choose Your Interest:</td>
+                        <!-- MultiCombo -->
+                        <td>
+                            <select id="course" multiple class="form-control">
+                                <option value="">Accounts</option>
+                                <option value="1">Business Development</option>
+                                <option value="2">Electronics</option>
+                                <option value="3">Finance</option>
+                                <option value="4">Programming</option>
+                                <option value="5">Stastics</option>
+                            </select>
+                           
+                            <span id="courseerror" class="error"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Country</td>
+                        <td>
+                            <select id="mySelect" name="usrname" class="form-control" style="width:90px;   margin-bottom:10px;">
+                                <!-- SingleCombo -->
+                                <option value="">Select </option>
+                                <option>India</option>
+                                <option>US</option>
+                                <option>UK</option>
+                                <option>AUS</option>
+                            </select>
+
+                            <span id="cnm" class="error"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="check" value="" class="form-control" name="checkbox">
+                            <!-- CheckBox -->
+
+                            <td>I Agree to Privacy Policy
+                                <label><span id="checkm"></span></label>
+                            </td>
+
+                    </tr>
+                </table>
+                <!-- Submit Button -->
+                <input type="submit" id="submit" value="Submit" />
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

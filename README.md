@@ -1,1 +1,2 @@
-# jQuery-Genric-Validations
+#Form Validation Using jQuery.
+#Genric Validations.

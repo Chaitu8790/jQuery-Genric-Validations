@@ -1,0 +1,59 @@
+
+
+body {
+  width: 100%;
+  position: relative;
+}
+
+@media screen and (max-width: 500px) {             /*//For Smaller Screens*/
+  #myform {
+    padding-left: -50px;
+    width: 50%;
+    
+  }
+  input[type=text] select {
+    width: 30px;
+    margin-right: 30px;
+    size: 20;
+  }
+  input[type=submit] {
+    float: right;
+    font-size: 10px;
+  }
+  #fnm,#lnm,#pnm,#enm,#gnm,#courseerror,#cnm,#checkm{
+    font-size: 11px;
+    white-space: nowrap;
+  }
+}
+
+#myform {
+  border-radius: 1px;
+  background-color: lightgrey;
+  height: 100px;
+  width: 90%;
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-bottom: 70px;
+  border-style: solid;
+  border-color: #008B88;
+  border-width: 1px;
+}
+
+input[type=text] select {
+  width: 90px;
+  padding: 9px;
+  margin-bottom: 10px;
+  display: inline-flex;
+  border: 1px solid blue;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-left: 0px;
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  margin-bottom: 10px;
+  margin-left: 90%;
+  font-size: 15px;
+}
+
